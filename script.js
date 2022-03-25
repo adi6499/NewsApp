@@ -11,7 +11,7 @@ let World =  document.getElementById("world")
             data.articles.map((d)=>{
                 let {author,content,description,publishedAt,title,url,urlToImage} = d;
               
-
+ console.log(d)
                 news.innerHTML+=`
             <a href=${url}><div class="box">
                 <img src=${urlToImage} class="newsImage"  alt="image"/>
