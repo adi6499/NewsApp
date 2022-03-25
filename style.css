@@ -19,13 +19,15 @@
   );
   background-size: 4vmin 4vmin;
   background-repeat: repeat;
+  
 }
 
 
 .news {
   width: 90%;
   height: 90%;
-
+  scroll-snap-align: start;
+  scroll-snap-type: both mandatory;
   position: absolute;
 
   overflow: scroll;
@@ -38,7 +40,8 @@
   position: relative;
   margin-bottom: 3vmin;
   padding: 1vmin;
-
+  scroll-snap-align: start;
+  scroll-snap-type: both mandatory;
   display: grid;
   place-items: center;
   transition: all 300ms linear;
@@ -55,7 +58,7 @@
   width: 25%;
   height: 90%;
   position: absolute;
-
+  filter: brightness(30%);
   right: 2%;
   border-radius: 2vmin;
 }
@@ -78,6 +81,8 @@
   left: 1%;
   width: 70%;
   padding: 2vmin;
+  overflow: scroll;
+ height: 45%;
 }
 a {
   text-decoration: none;
@@ -116,7 +121,7 @@ a {
     padding: 2vmin;
     text-align: start;
     line-height: 4vmin;
-    top: 45%;
+    top: 35%;
   }
   .date {
     font-size: 2.5vmin;
@@ -128,3 +133,5 @@ a {
     filter: brightness(40%);
   }
 }
+
+
